@@ -34,7 +34,7 @@ public class CallbackTest {
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.className("button_view_extra")).click();
 
-        String text = driver.findElement(By.className("paragraph")).getText();
+        String text = driver.findElement(By.className("p[data-test-id='order-success']")).getText();
         assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", text.trim());
 
     }
